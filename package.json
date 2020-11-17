@@ -1,0 +1,25 @@
+{
+  "name": "inventory-graphql",
+  "version": "1.0.0",
+  "description": "API Server for the inventory app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "author": "Mike Nau",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "graph-tools": "^0.1.2",
+    "graphql": "^15.4.0",
+    "mongoose": "^5.10.15"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "nodemon": "^2.0.6"
+  }
+}
