@@ -1,19 +1,24 @@
 {
   "name": "inventory-graphql",
   "version": "1.0.0",
-  "description": "API Server for the inventory app",
+  "description": "GraphQL Server for the inventory app",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
-    "dev": "nodemon server"
+    "start": "node server --exec babel-node -e js",
+    "dev": "nodemon server --exec babel-node -e js"
   },
   "author": "Mike Nau",
+  "keywords": [
+    "graphql",
+    "node"
+  ],
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-graphql": "^0.11.0",
-    "graph-tools": "^0.1.2",
     "graphql": "^15.4.0",
+    "graphql-tools": "^7.0.1",
     "mongoose": "^5.10.15"
   },
   "devDependencies": {
