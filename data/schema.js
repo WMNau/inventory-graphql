@@ -86,6 +86,16 @@ const typeDefs = `
         createAlert(input: AlertInput): Alert
         createItem(input: ItemInput): Item
         createUser(input: UserInput): User
+        
+        updateActivity(input: ActivityInput): Activity
+        updateAlert(input: AlertInput): Alert
+        updateItem(input: ItemInput): Item
+        updateUser(input: UserInput): User
+        
+        deleteActivity(id: ID): String
+        deleteAlert(id: ID): String
+        deleteItem(id: ID): String
+        deleteUser(id: ID): String
     }
 `;
 
